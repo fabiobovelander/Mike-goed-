@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoed Ontstopping 06-14392215 | Binnen 60 Min | Dag &amp; Nacht</title>
+  <meta name="description" content="Spoed ontstoppingsdienst actief in Utrecht, Gouda en omgeving. Verstopte afvoer of toilet? Wij zijn binnen 60 minuten ter plaatse, 24/7 dag en nacht. Bel direct: 06-14392215.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ontstoppingsbedrijfjm.nl/spoed/">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=barlow:300,400,500,600|barlow-condensed:400,600,700,900&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1TLXSLQ7L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J1TLXSLQ7L');
+  </script>
+
+  <style>
+    /* ── Design Tokens ── */
+    :root {
+      --navy:      #0A2E66;
+      --orange:    #F47A20;
+      --lightblue: #7FAFD4;
+      --bg:        #f4f6fa;
+      --white:     #ffffff;
+      --font-body: 'Barlow', sans-serif;
+      --font-cond: 'Barlow Condensed', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: #1a1a2e;
+      line-height: 1.6;
+    }
+
+    /* ── Pulsing badge ── */
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.3; }
+    }
+
+    .pulse-dot {
+      display: inline-block;
+      animation: pulse-dot 1.4s ease-in-out infinite;
+    }
+
+    .spoed-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(244,122,32,0.18);
+      border: 2px solid var(--orange);
+      color: var(--orange);
+      font-family: var(--font-cond);
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.4rem 1.1rem;
+      border-radius: 999px;
+      margin-bottom: 2rem;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      min-height: 65vh;
+      background: var(--navy);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 1.25rem 4rem;
+    }
+
+    .hero h1 {
+      font-family: var(--font-cond);
+      font-weight: 900;
+      font-size: clamp(3rem, 10vw, 6.5rem);
+      color: var(--white);
+      line-height: 1.0;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+    }
+
+    .hero .subheading {
+      font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+      color: var(--lightblue);
+      font-weight: 400;
+      margin-bottom: 2.25rem;
+    }
+
+    /* ── CTA Button ── */
+    .btn-call {
+      display: block;
+      width: 100%;
+      max-width: 480px;
+      background: var(--orange);
+      color: var(--white);
+      font-family: var(--font-cond);
+      font-weight: 900;
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      text-align: center;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 6px 28px rgba(244,122,32,0.45);
+      margin: 0 auto 0.6rem;
+      line-height: 1.1;
+    }
+
+    .btn-call span.label {
+      display: block;
+      font-size: 0.72em;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      opacity: 0.9;
+      margin-bottom: 0.15rem;
+    }
+
+    .btn-call:hover, .btn-call:focus {
+      background: #d96510;
+      transform: translateY(-2px);
+    }
+
+    .btn-call:active { transform: translateY(0); }
+
+    /* ── USP badges ── */
+    .usp-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-top: 0.5rem;
+    }
+
+    .usp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+    }
+
+    .usp-badge::before {
+      content: '✓';
+      color: var(--orange);
+      font-weight: 700;
+    }
+
+    /* ── Contact form section ── */
+    .form-section {
+      background: var(--white);
+      padding: 4rem 1.25rem;
+    }
+
+    .section-inner {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-family: var(--font-cond);
+      font-weight: 700;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .section-sub {
+      text-align: center;
+      color: #555;
+      margin-bottom: 2rem;
+      font-size: 0.97rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .form-group label {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--navy);
+      letter-spacing: 0.02em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1.5px solid #d0d8e8;
+      border-radius: 5px;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: #1a1a2e;
+      background: #fafbfd;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--navy);
+      background: #fff;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .btn-submit {
+      background: var(--orange);
+      color: var(--white);
+      border: none;
+      padding: 0.95rem 2rem;
+      font-family: var(--font-cond);
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: 0.06em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      text-transform: uppercase;
+      margin-top: 0.4rem;
+    }
+
+    .btn-submit:hover { background: #d96510; transform: translateY(-1px); }
+    .btn-submit:active { transform: translateY(0); }
+
+    /* ── Trust section ── */
+    .trust-section {
+      background: var(--bg);
+      padding: 3.5rem 1.25rem;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      max-width: 820px;
+      margin: 2rem auto 0;
+    }
+
+    .trust-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1.6rem 1.4rem;
+      text-align: center;
+      border-top: 4px solid var(--orange);
+      box-shadow: 0 2px 12px rgba(10,46,102,0.07);
+    }
+
+    .trust-card .trust-icon {
+      font-size: 2rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .trust-card h3 {
+      font-family: var(--font-cond);
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+    }
+
+    .trust-card p {
+      font-size: 0.88rem;
+      color: #555;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.65);
+      text-align: center;
+      padding: 2rem 1.25rem;
+      font-size: 0.88rem;
+    }
+
+    footer a {
+      color: var(--lightblue);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    footer .footer-logo {
+      font-family: var(--font-cond);
+      font-weight: 900;
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    /* ── Responsive ── */
+    @media (min-width: 480px) {
+      .usp-row { flex-wrap: nowrap; }
+    }
+
+    @media (min-width: 768px) {
+      .btn-call { font-size: 2.4rem; padding: 1.1rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="spoed-badge">
+      <span class="pulse-dot">●</span> Spoedservice Actief
+    </div>
+
+    <h1>WC of Afvoer<br>Verstopt?</h1>
+
+    <p class="subheading">Wij zijn er binnen 60 minuten</p>
+
+    <a href="tel:+31614392215" class="btn-call" onclick="gtag('event','phone_call',{event_category:'CTA',event_label:'hero_call_button'});">
+      <span class="label">Bel direct — dag &amp; nacht</span>
+      06-14392215
+    </a>
+
+    <div class="usp-row">
+      <span class="usp-badge">Binnen 60 min ter plaatse</span>
+      <span class="usp-badge">24/7 dag &amp; nacht</span>
+      <span class="usp-badge">Vaste prijs vooraf</span>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT FORM ═══ -->
+  <section class="form-section">
+    <div class="section-inner">
+      <h2 class="section-title">Stuur een Spoedmelding</h2>
+      <p class="section-sub">Liever niet bellen? Vul het formulier in en wij nemen direct contact op.</p>
+
+      <form class="contact-form" name="spoed-contact" method="POST" onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label for="naam">Uw naam</label>
+          <input type="text" id="naam" name="naam" placeholder="Jan de Vries" required>
+        </div>
+        <div class="form-group">
+          <label for="telefoon">Telefoonnummer</label>
+          <input type="tel" id="telefoon" name="telefoon" placeholder="06-12345678" required>
+        </div>
+        <div class="form-group">
+          <label for="omschrijving">Omschrijving van het probleem</label>
+          <textarea id="omschrijving" name="omschrijving" placeholder="Bijv. verstopt toilet op de begane grond, water loopt niet weg..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Verstuur Spoedmelding →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══ TRUST SECTION ═══ -->
+  <section class="trust-section">
+    <div class="section-inner">
+      <h2 class="section-title" style="text-align:center;">Waarom Klanten Ons Kiezen</h2>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon">🏛️</div>
+          <h3>KvK-geregistreerd</h3>
+          <p>Entstoppingsbedrijf JM is officieel ingeschreven bij de Kamer van Koophandel.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">🛡️</div>
+          <h3>Garantie op werk</h3>
+          <p>Wij staan achter onze werkzaamheden en geven garantie op alle uitgevoerde reparaties.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">🚗</div>
+          <h3>Geen voorrijkosten</h3>
+          <p>U betaalt alleen voor de daadwerkelijke werkzaamheden. Geen verborgen kosten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <span class="footer-logo">JM</span>
+    <p>Entstoppingsbedrijf JM — Mike de Wit</p>
+    <p style="margin-top:0.4rem;">
+      <a href="tel:+31614392215">06-14392215</a> &nbsp;|&nbsp;
+      <a href="https://ontstoppingsbedrijfjm.nl">entstoppingsbedrijfjm.nl</a>
+    </p>
+    <p style="margin-top:1rem; font-size:0.78rem; opacity:0.5;">
+      &copy; 2026 Entstoppingsbedrijf JM. Alle rechten voorbehouden.
+    </p>
+  </footer>
+
+  <script>
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      // GA4 form_submit event
+      gtag('event', 'form_submit', {
+        event_category: 'Contact',
+        event_label: 'spoed_form'
+      });
+      // Simple feedback (in production: replace with real form handler)
+      const btn = e.target.querySelector('.btn-submit');
+      btn.textContent = '✓ Verzonden! Wij bellen u zo snel mogelijk.';
+      btn.style.background = '#2a7a2a';
+      btn.disabled = true;
+    }
+  </script>
+</body>
+</html>
