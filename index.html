@@ -103,6 +103,15 @@
     transition: background 0.2s !important;
   }
   .nav-cta:hover { background: #d4600a !important; color: white !important; }
+  .nav-spoed {
+    background: var(--orange);
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 700 !important;
+    transition: background 0.2s !important;
+  }
+  .nav-spoed:hover { background: #d4600a !important; color: white !important; }
 
   .hamburger {
     display: none;
@@ -1130,6 +1139,8 @@
     <li><a href="#werkwijze" onclick="scrollToSection('werkwijze')">Werkwijze</a></li>
     <li><a href="#over-ons" onclick="scrollToSection('over-ons')">Over ons</a></li>
     <li><a href="#reviews" onclick="scrollToSection('reviews')">Reviews</a></li>
+    <li><a href="/werkgebied/">Werkgebied</a></li>
+    <li><a href="/spoed/" class="nav-spoed">Spoed</a></li>
     <li><a href="#contact" onclick="scrollToSection('contact')" class="nav-cta">🚨 Spoed bellen</a></li>
     <li><a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" class="nav-wa">💬 WhatsApp</a></li>
   </ul>
@@ -1143,6 +1154,8 @@
   <a href="#werkwijze" onclick="scrollToSection('werkwijze');toggleMenu()">Werkwijze</a>
   <a href="#over-ons" onclick="scrollToSection('over-ons');toggleMenu()">Over ons</a>
   <a href="#reviews" onclick="scrollToSection('reviews');toggleMenu()">Reviews</a>
+  <a href="/werkgebied/">Werkgebied</a>
+  <a href="/spoed/" style="color: var(--orange) !important; font-weight: 700 !important;">Spoed</a>
   <a href="#contact" onclick="scrollToSection('contact');toggleMenu()">🚨 Nu bellen – Spoed</a>
   <a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" style="color:#25D366 !important;">💬 WhatsApp ons</a>
 </div>
