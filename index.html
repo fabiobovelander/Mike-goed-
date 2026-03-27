@@ -1142,7 +1142,7 @@
     <li><a href="/werkgebied/">Werkgebied</a></li>
     <li><a href="/spoed/" class="nav-spoed">Spoed</a></li>
     <li><a href="#contact" onclick="scrollToSection('contact')" class="nav-cta">🚨 Spoed bellen</a></li>
-    <li><a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" class="nav-wa">💬 WhatsApp</a></li>
+    <li><a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'nav'});" class="nav-wa">💬 WhatsApp</a></li>
   </ul>
   <div class="hamburger" id="hamburger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
@@ -1157,7 +1157,7 @@
   <a href="/werkgebied/">Werkgebied</a>
   <a href="/spoed/" style="color: var(--orange) !important; font-weight: 700 !important;">Spoed</a>
   <a href="#contact" onclick="scrollToSection('contact');toggleMenu()">🚨 Nu bellen – Spoed</a>
-  <a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" style="color:#25D366 !important;">💬 WhatsApp ons</a>
+  <a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'mobile_bar'});" style="color:#25D366 !important;">💬 WhatsApp ons</a>
 </div>
 
 <!-- HERO -->
@@ -1165,7 +1165,7 @@
   <div class="dither"></div>
   <canvas id="hero-canvas"></canvas>
   <div class="hero-content">
-    <div class="hero-badge"><span class="badge-dot"></span>24/7 Beschikbaar door heel Nederland</div>
+    <div class="hero-badge"><span class="badge-dot"></span>24/7 Bereikbaar &bull; Utrecht, Gouda &amp; regio</div>
     <h1 class="hero-title">
       Verstopt?<br>
       <span class="outline">Wij</span> lossen<br>
@@ -1174,7 +1174,7 @@
     <p class="hero-sub">J&M Ontstoppingsbedrijf — snel, betrouwbaar en transparant. Professionele ontstopping van riolen, afvoeren en WC's met vaste tarieven.</p>
     <div class="hero-actions">
       <a href="tel:+31614392215" onclick="gtag('event','phone_call',{'event_category':'bellen','event_label':'hero'});" class="btn-primary" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;">📞 Direct bellen</a>
-      <a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" class="btn-whatsapp" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;">💬 WhatsApp</a>
+      <a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'hero'});" class="btn-whatsapp" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;">💬 WhatsApp</a>
     </div>
   </div>
   <div class="hero-stats">
@@ -1187,8 +1187,8 @@
       <div class="stat-label">Responstijd</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">NL</div>
-      <div class="stat-label">Heel Nederland</div>
+      <div class="stat-num">50km</div>
+      <div class="stat-label">Werkgebied</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">100%</div>
@@ -1208,7 +1208,7 @@
     <span class="ticker-item">24/7 Spoedservice <span class="ticker-sep">◆</span></span>
     <span class="ticker-item">Periodiek Onderhoud <span class="ticker-sep">◆</span></span>
     <span class="ticker-item">Vaste Tarieven <span class="ticker-sep">◆</span></span>
-    <span class="ticker-item">Heel Nederland <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">Utrecht &bull; Gouda &bull; Woerden <span class="ticker-sep">◆</span></span>
     <span class="ticker-item">Particulier & Zakelijk <span class="ticker-sep">◆</span></span>
     <span class="ticker-item">Snel & Betrouwbaar <span class="ticker-sep">◆</span></span>
     <!-- duplicate for seamless loop -->
@@ -1217,7 +1217,7 @@
     <span class="ticker-item">24/7 Spoedservice <span class="ticker-sep">◆</span></span>
     <span class="ticker-item">Periodiek Onderhoud <span class="ticker-sep">◆</span></span>
     <span class="ticker-item">Vaste Tarieven <span class="ticker-sep">◆</span></span>
-    <span class="ticker-item">Heel Nederland <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">Utrecht &bull; Gouda &bull; Woerden <span class="ticker-sep">◆</span></span>
     <span class="ticker-item">Particulier & Zakelijk <span class="ticker-sep">◆</span></span>
     <span class="ticker-item">Snel & Betrouwbaar <span class="ticker-sep">◆</span></span>
   </div>
@@ -1266,7 +1266,7 @@
     <div class="service-card">
       <div class="service-icon">⚡</div>
       <h3>24/7 Spoedservice</h3>
-      <p>Dag en nacht, weekend of feestdag — wij zijn altijd bereikbaar voor acute problemen door heel Nederland.</p>
+      <p>Dag en nacht, weekend of feestdag — wij zijn altijd bereikbaar voor acute problemen in Utrecht, Gouda, Woerden en omgeving.</p>
       <span class="service-tag">Altijd beschikbaar</span>
     </div>
   </div>
@@ -1334,7 +1334,7 @@
     <div class="about-content">
       <div class="section-label">Over J&M</div>
       <h2 class="section-title">Klein team,<br><span class="accent">groot</span> resultaat</h2>
-      <p class="about-desc">J&M Ontstoppingsbedrijf is een ervaren 2-mans team dat door heel Nederland actief is. Wij geloven in eerlijk werk, directe communicatie en vaste tarieven — geen verrassingen op de factuur.</p>
+      <p class="about-desc">J&M Ontstoppingsbedrijf is een ervaren 2-mans team actief in de regio Utrecht, Gouda en Woerden. Wij geloven in eerlijk werk, directe communicatie en vaste tarieven — geen verrassingen op de factuur.</p>
       <div class="about-features">
         <div class="about-feature">
           <div class="feature-check">✓</div>
@@ -1376,7 +1376,7 @@
         <div class="reviewer-avatar">MV</div>
         <div>
           <div class="reviewer-name">Mark van der Berg</div>
-          <div class="reviewer-loc">Amsterdam</div>
+          <div class="reviewer-loc">Utrecht</div>
         </div>
       </div>
     </div>
@@ -1387,7 +1387,7 @@
         <div class="reviewer-avatar">LS</div>
         <div>
           <div class="reviewer-name">Laura Smits</div>
-          <div class="reviewer-loc">Rotterdam, Horeca</div>
+          <div class="reviewer-loc">Gouda</div>
         </div>
       </div>
     </div>
@@ -1402,6 +1402,14 @@
         </div>
       </div>
     </div>
+  </div>
+  <div style="text-align:center;margin-top:2rem;">
+    <a href="https://g.page/r/entstoppingsbedrijfjm/review" target="_blank"
+       onclick="gtag('event','google_reviews_click',{'event_category':'trust','event_label':'reviews_section'});"
+       style="display:inline-flex;align-items:center;gap:0.5rem;background:white;border:2px solid #e0e0e0;border-radius:8px;padding:0.6rem 1.4rem;font-weight:600;color:#333;text-decoration:none;font-size:0.95rem;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      Bekijk onze Google Reviews
+    </a>
   </div>
 </section>
 
@@ -1421,7 +1429,7 @@
         <div class="contact-info-card">
           <div class="cic-label">🚨 Spoed? Bel direct</div>
           <a href="tel:+31614392215" onclick="gtag('event','phone_call',{'event_category':'bellen','event_label':'contact'});" class="contact-call-btn">📞 +31 (0)6 14392215</a>
-          <a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" class="contact-call-btn" style="margin-top:0.5rem;background:#25D366;">💬 WHATSAPP</a>
+          <a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'contact_section'});" class="contact-call-btn" style="margin-top:0.5rem;background:#25D366;">💬 WHATSAPP</a>
           <p class="cic-sub">24/7 bereikbaar, ook in het weekend</p>
         </div>
 
@@ -1451,7 +1459,7 @@
             <span class="cd-icon">🌍</span>
             <div>
               <div class="cd-label">Werkgebied</div>
-              <div class="cd-val">Heel Nederland</div>
+              <div class="cd-val">Utrecht, Gouda &amp; regio</div>
             </div>
           </div>
           <div class="cd-item">
@@ -1467,23 +1475,19 @@
       <!-- Right: contact form via Formspree -->
       <div class="contact-form-col">
         <div class="form-card">
-          <h3 class="form-title">Stuur ons een bericht</h3>
-          <p class="form-sub">Wij reageren binnen 24 uur — voor spoed altijd bellen.</p>
+          <h3 class="form-title">Terugbelverzoek</h3>
+          <p class="form-sub">Laat uw nummer achter — Mike belt u binnen 15 minuten terug.</p>
 
           <form id="contact-form" action="https://formspree.io/f/mojngrkb" method="POST" onsubmit="handleFormSubmit(event)">
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label">Naam *</label>
-                <input type="text" name="naam" class="form-input" placeholder="Uw volledige naam" required>
+                <input type="text" name="naam" class="form-input" placeholder="Uw naam" required>
               </div>
               <div class="form-group">
-                <label class="form-label">Telefoon</label>
-                <input type="tel" name="telefoon" class="form-input" placeholder="+31 6 ...">
+                <label class="form-label">Telefoonnummer *</label>
+                <input type="tel" name="telefoon" class="form-input" placeholder="+31 6 ..." required>
               </div>
-            </div>
-            <div class="form-group">
-              <label class="form-label">E-mailadres *</label>
-              <input type="email" name="email" class="form-input" placeholder="uwmail@voorbeeld.nl" required>
             </div>
             <div class="form-group">
               <label class="form-label">Type probleem</label>
@@ -1498,13 +1502,13 @@
               </select>
             </div>
             <div class="form-group">
-              <label class="form-label">Uw bericht *</label>
-              <textarea name="bericht" class="form-input form-textarea" placeholder="Beschrijf kort uw probleem en uw adres..." required></textarea>
+              <label class="form-label">Uw adres (optioneel)</label>
+              <input type="text" name="adres" class="form-input" placeholder="Straat, stad">
             </div>
-            <input type="hidden" name="_subject" value="Nieuw bericht via website J&M">
+            <input type="hidden" name="_subject" value="Terugbelverzoek via website J&M">
             <input type="hidden" name="_next" value="">
             <button type="submit" class="form-submit-btn" id="form-submit-btn">
-              <span id="btn-text">Verstuur bericht ✉️</span>
+              <span id="btn-text">Bel mij terug</span>
             </button>
           </form>
 
@@ -1531,7 +1535,7 @@
         <div class="footer-logo">
           <img src="data:image/png;base64,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" alt="J&M Ontstoppingsbedrijf" style="height:52px;width:auto;display:block;">
         </div>
-        <p class="footer-desc">Gespecialiseerd riool- en afvoerservicebedrijf. Snel, betrouwbaar en transparant — 24/7 door heel Nederland.</p>
+        <p class="footer-desc">Gespecialiseerd riool- en afvoerservicebedrijf in Utrecht, Gouda en Woerden. Snel, betrouwbaar en transparant — 24/7 bereikbaar.</p>
         <div class="footer-badge">
           <span class="footer-badge-dot"></span>
           Nu beschikbaar voor spoedgevallen
@@ -1587,7 +1591,7 @@
             <div class="fc-icon">🌍</div>
             <div>
               <div class="fc-label">Werkgebied</div>
-              <div class="fc-value">Heel Nederland</div>
+              <div class="fc-value">Utrecht, Gouda &amp; regio (50km)</div>
             </div>
           </li>
         </ul>
@@ -1803,5 +1807,35 @@
 
 
 </script>
+
+<!-- Sticky bel-knop mobiel -->
+<style>
+  .sticky-call {
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 9999;
+    background: #E87722;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.25);
+  }
+  @media (max-width: 768px) {
+    .sticky-call { display: block; }
+    body { padding-bottom: 60px; }
+  }
+</style>
+<a href="tel:+31614392215"
+   class="sticky-call"
+   onclick="gtag('event','phone_call',{'event_category':'bellen','event_label':'sticky_mobiel'});">
+  BEL NU — 06 14 39 22 15
+</a>
 </body>
 </html>
