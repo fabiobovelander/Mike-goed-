@@ -2384,7 +2384,7 @@
 
     <div class="hero-actions">
 
-      <a href="tel:+31614392215" onclick="gtag('event','phone_call',{'event_category':'bellen','event_label':'hero'});" class="btn-primary" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;">📞 Direct bellen</a>
+      <a href="tel:+31614392215" onclick="if(/Mobi|Android/i.test(navigator.userAgent)){gtag('event','phone_call',{'event_category':'bellen','event_label':'hero'});}else{event.preventDefault();window.open('https://wa.me/31614392215?text=Hallo%2C%20ik%20heb%20een%20vraag%20over%20ontstopping','_blank');gtag('event','whatsapp_click',{'event_category':'bellen','event_label':'hero'});}"class="btn-primary" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;">📞 Direct bellen</a>
 
       <a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'hero'});" class="btn-whatsapp" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;">💬 WhatsApp</a>
 
@@ -2894,7 +2894,7 @@
 
           <div class="cic-label">🚨 Spoed? Bel direct</div>
 
-          <a href="tel:+31614392215" onclick="gtag('event','phone_call',{'event_category':'bellen','event_label':'contact'});" class="contact-call-btn">📞 +31 (0)6 14392215</a>
+          <a href="tel:+31614392215" onclick="if(/Mobi|Android/i.test(navigator.userAgent)){gtag('event','phone_call',{'event_category':'bellen','event_label':'contact'});}else{event.preventDefault();window.open('https://wa.me/31614392215?text=Hallo%2C%20ik%20heb%20een%20vraag%20over%20ontstopping','_blank');gtag('event','whatsapp_click',{'event_category':'bellen','event_label':'contact'});}"class="contact-call-btn">📞 +31 (0)6 14392215</a>
 
           <a href="https://wa.me/31614392215?text=Hallo%20J%26M%2C%20ik%20heb%20een%20vraag%20over%20mijn%20afvoer." target="_blank" onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'contact_section'});" class="contact-call-btn" style="margin-top:0.5rem;background:#25D366;">💬 WHATSAPP</a>
 
@@ -3298,7 +3298,7 @@
 
         </ul>
 
-        <a href="tel:+31614392215" onclick="gtag('event','phone_call',{'event_category':'bellen','event_label':'footer'});" class="footer-cta-btn" style="text-decoration:none;display:block;text-align:center;">🚨 Direct bellen</a>
+        <a href="tel:+31614392215" onclick="if(/Mobi|Android/i.test(navigator.userAgent)){gtag('event','phone_call',{'event_category':'bellen','event_label':'footer'});}else{event.preventDefault();window.open('https://wa.me/31614392215?text=Hallo%2C%20ik%20heb%20een%20vraag%20over%20ontstopping','_blank');gtag('event','whatsapp_click',{'event_category':'bellen','event_label':'footer'});}"class="footer-cta-btn" style="text-decoration:none;display:block;text-align:center;">🚨 Direct bellen</a>
 
       </div>
 
@@ -3706,7 +3706,7 @@
 
    class="sticky-call"
 
-   onclick="gtag('event','phone_call',{'event_category':'bellen','event_label':'sticky_mobiel'});">
+   onclick="if(/Mobi|Android/i.test(navigator.userAgent)){gtag('event','phone_call',{'event_category':'bellen','event_label':'sticky_mobiel'});}else{event.preventDefault();window.open('https://wa.me/31614392215?text=Hallo%2C%20ik%20heb%20een%20vraag%20over%20ontstopping','_blank');gtag('event','whatsapp_click',{'event_category':'bellen','event_label':'sticky_mobiel'});}">
 
   BEL NU — 06 14 39 22 15
 
